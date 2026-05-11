@@ -1,0 +1,25 @@
+<header>
+  <div class="nav-container">
+    <a href="{{ '/' | relative_url }}" class="logo">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width:40px;height:40px;">
+        <defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0B3D91"/><stop offset="100%" style="stop-color:#C41E3A"/></linearGradient></defs>
+        <circle cx="50" cy="50" r="45" fill="url(#grad)" stroke="#F4D03F" stroke-width="3"/>
+        <text x="50" y="55" font-family="Merriweather, serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">E</text>
+        <text x="50" y="75" font-family="Inter, sans-serif" font-size="10" fill="#F4D03F" text-anchor="middle">NC</text>
+      </svg>
+      <span>EducNote Congo</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="{{ '/#accueil' | relative_url }}" class="active">Accueil</a></li>
+        <li><a href="{{ '/about' | relative_url }}">À propos</a></li>
+        <li><a href="{{ '/research' | relative_url }}">Recherche</a></li>
+        <li><a href="{{ '/pedagogy' | relative_url }}">Pédagogie</a></li>
+        <li><a href="{{ '/resources' | relative_url }}">Ressources</a></li>
+        <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="lang-switch" id="langToggle">FR | EN</a>
+  </div>
+</header>

@@ -1,0 +1,17 @@
+fr:
+  home: "Accueil"
+  about: "À propos"
+  research: "Recherche"
+  pedagogy: "Pédagogie"
+  resources: "Ressources"
+  blog: "Blog"
+  contact: "Contact"
+
+en:
+  home: "Home"
+  about: "About"
+  research: "Research"
+  pedagogy: "Pedagogy"
+  resources: "Resources"
+  blog: "Blog"
+  contact: "Contact"

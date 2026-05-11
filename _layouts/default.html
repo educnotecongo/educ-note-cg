@@ -1,30 +1,44 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.default_lang }}">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-  
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  
-  <link rel="icon" href="image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
-  
-    <!-- Meta tags SEO -->
-  <meta name="description" content="{{ page.description | default: site.description }}">
-  <meta name="author" content="{{ site.author.name }}">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}">
-  <meta property="og:description" content="{{ page.description | default: site.description }}">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-  {% include header.html %}
-  
+  <!-- HEADER INTÉGRÉ -->
+  <header>
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <img src="/assets/img/logo.svg" alt="Logo" style="width:40px;height:40px;">
+        <span>EducNote Congo</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/about">À propos</a></li>
+          <li><a href="/research">Recherche</a></li>
+          <li><a href="/pedagogy">Pédagogie</a></li>
+          <li><a href="/resources">Ressources</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
   <main>
     {{ content }}
   </main>
+
+  <!-- FOOTER INTÉGRÉ -->
+  <footer>
+    <p>© 2026 <strong>EducNote Congo</strong><br>Développer, former pour innover.</p>
+    <p>Créé par Riveld ITOUA ONDELE - FST UMNG Brazzaville</p>
+  </footer>
+
+  <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+</body>
+</html>

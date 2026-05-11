@@ -1,7 +1,7 @@
 title: EducNote Congo
 tagline: "Développer, former pour innover."
 description: "Plateforme de pédagogie et de recherche scientifique en Sciences Techniques"
-baseurl: ""
+baseurl: "/educ-note-cg"
 url: "https://educnotecongo.github.io"
 author:
   name: "Riveld ITOUA ONDELE"
@@ -10,11 +10,6 @@ author:
 
 markdown: kramdown
 theme: null
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
+plugins: []
 
-languages: ["fr", "en"]
-default_lang: "fr"
-
-exclude: [README.md, Gemfile, Gemfile.lock]
+exclude: [README.md]

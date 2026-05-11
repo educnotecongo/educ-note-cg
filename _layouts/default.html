@@ -8,21 +8,21 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <!-- HEADER INTÉGRÉ -->
+  <!-- HEADER -->
   <header>
     <div class="nav-container">
-      <a href="/" class="logo">
-        <img src="/assets/img/logo.svg" alt="Logo" style="width:40px;height:40px;">
+      <a href="{{ '/' | relative_url }}" class="logo">
+        <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="Logo" style="width:40px;height:40px;">
         <span>EducNote Congo</span>
       </a>
       <nav>
         <ul>
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/about">À propos</a></li>
-          <li><a href="/research">Recherche</a></li>
-          <li><a href="/pedagogy">Pédagogie</a></li>
-          <li><a href="/resources">Ressources</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
+          <li><a href="{{ '/about' | relative_url }}">À propos</a></li>
+          <li><a href="{{ '/research' | relative_url }}">Recherche</a></li>
+          <li><a href="{{ '/pedagogy' | relative_url }}">Pédagogie</a></li>
+          <li><a href="{{ '/resources' | relative_url }}">Ressources</a></li>
+          <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -33,10 +33,17 @@
     {{ content }}
   </main>
 
-  <!-- FOOTER INTÉGRÉ -->
+  <!-- FOOTER CORRIGÉ -->
   <footer>
-    <p>© 2026 <strong>EducNote Congo</strong><br>Développer, former pour innover.</p>
-    <p>Créé par Riveld ITOUA ONDELE - FST UMNG Brazzaville</p>
+    <p>© 2026 <strong>EducNote Congo</strong><br>
+    Développer, former pour innover.</p>
+    
+    <div style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 10px;">
+      <p style="margin-bottom: 5px;">Auteur : <strong>Riveld ITOUA ONDELE</strong></p>
+      <a href="{{ '/about' | relative_url }}" style="color: #F4D03F; text-decoration: underline; font-size: 0.9rem;">
+        👤 Connaître l'auteur
+      </a>
+    </div>
   </footer>
 
   <script src="{{ '/assets/js/script.js' | relative_url }}"></script>

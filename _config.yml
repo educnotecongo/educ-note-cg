@@ -1,8 +1,12 @@
 title: EducNote Congo
 tagline: "Développer, former pour innover."
 description: "Plateforme de pédagogie et de recherche scientifique en Sciences Techniques"
-baseurl: "lnkstructures/educ-note-cg"
+
+# ⚠️ CORRECTION ICI : juste le nom du repo avec / devant
+baseurl: "/educ-note-cg"
+
 url: "https://lnkstructures.github.io"
+
 author:
   name: "Riveld ITOUA ONDELE"
   email: "mylndbyriveld@gmail.com"

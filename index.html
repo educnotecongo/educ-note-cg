@@ -6,10 +6,12 @@ title: Accueil
   <h1>EducNote Congo</h1>
   <p class="tagline">Développer, former pour innover.</p>
   <p>Plateforme dédiée à la pédagogie et à la recherche scientifique en Sciences Techniques.</p>
-  <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-    <a href="/research" class="btn">🔬 Recherche</a>
-    <a href="/pedagogy" class="btn btn-accent">📚 Pédagogie</a>
-    <a href="/resources" class="btn">📥 Ressources</a>
+  
+  <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top: 2rem;">
+    <!-- Les boutons corrigés -->
+    <a href="{{ '/research' | relative_url }}" class="btn">🔬 Recherche</a>
+    <a href="{{ '/pedagogy' | relative_url }}" class="btn btn-accent">📚 Pédagogie</a>
+    <a href="{{ '/resources' | relative_url }}" class="btn">📥 Ressources</a>
   </div>
 </section>
 
